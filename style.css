@@ -1,13 +1,61 @@
 body {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 500;
 }
 
 a {
   color: orange;
 }
-
 a:hover {
   color: black;
 }
-/*# sourceMappingURL=style.css.map */
+
+#jsDom .chat {
+  width: 500px;
+  height: 30vh;
+  border: 20px solid rgb(232, 237, 255);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+#jsDom .chat #messageyou, #jsDom .chat #messageme {
+  flex: 1;
+  overflow-y: auto;
+  min-height: 0;
+}
+#jsDom .chat #messageyou .line, #jsDom .chat #messageme .line {
+  margin: 10px;
+}
+#jsDom .chat #messageyou .line h3, #jsDom .chat #messageme .line h3 {
+  background-color: rgb(148, 166, 230);
+  display: inline-block;
+  padding: 6px;
+  color: white;
+  border-radius: 15px;
+}
+#jsDom .chat .text {
+  margin-top: auto;
+  display: flex;
+  align-items: flex-end;
+  background-color: rgb(232, 237, 255);
+  padding: 15px;
+  justify-content: center;
+}
+#jsDom .chat .text input {
+  border-radius: 15px;
+  margin-right: 10px;
+}
+#jsDom .chat .text #you h3 {
+  background-color: rgb(148, 166, 230);
+  display: inline-block;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 15px;
+}
+#jsDom .chat .text #me h3 {
+  background-color: rgb(148, 166, 230);
+  display: inline-block;
+  padding: 8px 15px;
+  color: white;
+  border-radius: 15px;
+}/*# sourceMappingURL=style.css.map */

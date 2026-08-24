@@ -1,0 +1,46 @@
+#jsDom
+    .chat
+        width: 500px
+        height: 30vh
+        border: 20px solid rgba(232, 237, 255)
+        border-radius: 15px
+        display: flex
+        flex-direction: column
+
+        #messageyou, #messageme
+            flex: 1                    
+            overflow-y: auto           
+            min-height: 0             
+            .line
+                margin: 10px
+                h3
+                    background-color: rgba(148, 166, 230)
+                    display: inline-block
+                    padding: 6px
+                    color: #ffffffff
+                    border-radius: 15px
+
+        .text
+            margin-top: auto
+            display: flex
+            align-items: flex-end
+            background-color: rgba(232, 237, 255)
+            padding: 15px
+            justify-content: center
+            input
+                border-radius: 15px
+                margin-right: 10px
+            #you
+                h3
+                    background-color: rgba(148, 166, 230)
+                    display: inline-block
+                    padding: 8px 15px
+                    color: #ffffffff
+                    border-radius: 15px
+            #me
+                h3
+                    background-color: rgba(148, 166, 230)
+                    display: inline-block
+                    padding: 8px 15px
+                    color: #ffffffff
+                    border-radius: 15px

@@ -16,8 +16,8 @@ $(document).ready(function () {
         e.preventDefault();
         let vall = $.trim($("#inputme").val());
         if (vall !== '') {
-            $("#messageme").append(myel(vall, 'own'));     // öz qutusunda -> sağda
-            $("#messageyou").append(myel(vall, 'other'));  // qarşı qutuda -> solda
+            $("#messageme").append(myel(vall, 'own'));     
+            $("#messageyou").append(myel(vall, 'other'));  
             $("#inputme").val("");
         }
     });
@@ -26,8 +26,8 @@ $(document).ready(function () {
         e.preventDefault();
         let vall = $.trim($("#inputyou").val());
         if (vall !== '') {
-            $("#messageyou").append(myel(vall, 'own'));    // öz qutusunda -> sağda
-            $("#messageme").append(myel(vall, 'other'));   // qarşı qutuda -> solda
+            $("#messageyou").append(myel(vall, 'own'));   
+            $("#messageme").append(myel(vall, 'other'));   
             $("#inputyou").val("");
         }
     });

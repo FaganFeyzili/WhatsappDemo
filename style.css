@@ -30,6 +30,7 @@ a:hover {
 }
 #jsDom .container .chat #messageyou .line, #jsDom .container .chat #messageme .line {
   margin: 10px;
+  display: flex;
 }
 #jsDom .container .chat #messageyou .line h3, #jsDom .container .chat #messageme .line h3 {
   background-color: rgb(148, 166, 230);
@@ -37,6 +38,12 @@ a:hover {
   padding: 6px;
   color: white;
   border-radius: 15px;
+}
+#jsDom .container .chat #messageyou .line.own, #jsDom .container .chat #messageme .line.own {
+  justify-content: flex-end;
+}
+#jsDom .container .chat #messageyou .line.other, #jsDom .container .chat #messageme .line.other {
+  justify-content: flex-start;
 }
 #jsDom .container .chat .text {
   margin-top: auto;

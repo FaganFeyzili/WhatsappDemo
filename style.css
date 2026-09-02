@@ -10,7 +10,12 @@ a:hover {
   color: black;
 }
 
-#jsDom .chat {
+#jsDom .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#jsDom .container .chat {
   width: 500px;
   height: 30vh;
   border: 20px solid rgb(232, 237, 255);
@@ -18,22 +23,22 @@ a:hover {
   display: flex;
   flex-direction: column;
 }
-#jsDom .chat #messageyou, #jsDom .chat #messageme {
+#jsDom .container .chat #messageyou, #jsDom .container .chat #messageme {
   flex: 1;
   overflow-y: auto;
   min-height: 0;
 }
-#jsDom .chat #messageyou .line, #jsDom .chat #messageme .line {
+#jsDom .container .chat #messageyou .line, #jsDom .container .chat #messageme .line {
   margin: 10px;
 }
-#jsDom .chat #messageyou .line h3, #jsDom .chat #messageme .line h3 {
+#jsDom .container .chat #messageyou .line h3, #jsDom .container .chat #messageme .line h3 {
   background-color: rgb(148, 166, 230);
   display: inline-block;
   padding: 6px;
   color: white;
   border-radius: 15px;
 }
-#jsDom .chat .text {
+#jsDom .container .chat .text {
   margin-top: auto;
   display: flex;
   align-items: flex-end;
@@ -41,18 +46,18 @@ a:hover {
   padding: 15px;
   justify-content: center;
 }
-#jsDom .chat .text input {
+#jsDom .container .chat .text input {
   border-radius: 15px;
   margin-right: 10px;
 }
-#jsDom .chat .text #you h3 {
+#jsDom .container .chat .text #you h3 {
   background-color: rgb(148, 166, 230);
   display: inline-block;
   padding: 8px 15px;
   color: white;
   border-radius: 15px;
 }
-#jsDom .chat .text #me h3 {
+#jsDom .container .chat .text #me h3 {
   text-align: right;
   background-color: rgb(148, 166, 230);
   display: inline-block;
